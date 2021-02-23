@@ -18,12 +18,14 @@ For this project, we will use the amazing work of collecting the vaccine data co
 # How will you navigate the project
 
 - First, consider the vaccine data source
-- Start at layouts/raw/vaccine.ecl and understand the data source. Understand why we created the definitions in these files.
-- Go to the layouts/public/vaccine.ecl and understand the design. Do you want to add any other attributes than we have already considered?
-- Go to the etl/clean_vaccine.ecl and understand the clean logic. Do you want to add anything?
-- Repeat the above steps for the next data source which is the population data
-- Once we have the data sources and the cleaned data, it is time to perform some analytics. Start with the output definition layouts/public/metrics
-- Go to analysis/metrics.ecl and understand the code. What else can we do? HINT #1: It looks like some of the states (e.g. AMERICAN SAMOA) data is not correct? why?
+- Start at layouts/raw/vaccine.ecl and understand the data source. Understand why we created the definitions in these files. [Shows use of MODULE, RECORD, CSV DATASET]
+- Go to the layouts/public/vaccine.ecl and understand the design. Do you want to add any other attributes than we have already considered? [Shows use of MODULE, RECORD, Thor DATASET]
+- Go to the etl/clean_vaccine.ecl and understand the clean logic. Do you want to add anything? [Shows use of IMPORT, PROJECT, ITERATE and TRANSFORM]
+- Go to  layouts/raw/population.ecl and understand the data source. Understand why we created the definitions in these files. [Shows use of MODULE, RECORD, CSV DATASET]
+- Go to the layouts/public/population.ecl and understand the design. Do you want to add any other attributes than we have already considered? [Shows use of MODULE, RECORD, Thor DATASET]
+- Go to the etl/clean_population.ecl and understand the clean logic. Do you want to add anything? [Shows use of IMPORT, ROLLUP and TRANSFORM]
+- Once we have the data sources and the cleaned data, it is time to perform some analytics. Start with the output definition layouts/public/metrics [Shows use of MODULE, RECORD, Thor DATASET]  
+- Go to analysis/metrics.ecl and understand the code. What else can we do? HINT #1: It looks like some of the states (e.g. AMERICAN SAMOA) data is not correct? why? [Shows use of IMPORT, JOIN and TRANSFORM]
 
 # Finally
 
